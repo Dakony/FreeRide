@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    tools:context="com.example.android.swill.EditProfileActivity">
+
+    <include
+        android:id="@+id/edit_toolbar"
+        layout="@layout/navigation_action"></include>
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="16dp"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/edit_toolbar"
+        android:layout_marginEnd="19dp"
+        android:layout_marginTop="38dp"
+        android:layout_toStartOf="@+id/save"
+        android:src="@drawable/profile" />
+
+    <EditText
+        android:id="@+id/editFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/profilePic"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="@color/cornflower_blue"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editFullName"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="@color/cornflower_blue"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:inputType="phone" />
+
+    <ProgressBar
+        android:id="@+id/progressBarImage"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/profilePic"
+        android:layout_alignTop="@+id/profilePic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="75dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/cornflower_blue"
+        android:visibility="gone"/>
+
+</RelativeLayout>

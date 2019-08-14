@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "877124539261",
+    "firebase_url": "https://swill-97cbc.firebaseio.com",
+    "project_id": "swill-97cbc",
+    "storage_bucket": "swill-97cbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877124539261:android:8f379c9b591dc9e0",
+        "android_client_info": {
+          "package_name": "com.example.android.swill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877124539261-bsv2lkm3h6mqj2e1fcab49gb4kjcv4oe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.swill",
+            "certificate_hash": "88ed2c406afc4378a13a01af4805c13ebdefbded"
+          }
+        },
+        {
+          "client_id": "877124539261-97to67lkot6ql119kf7b7hfptf897q2k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjvO6ZV2x1e5c_4D0GdDl6PKfEnvZfAss"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "877124539261-97to67lkot6ql119kf7b7hfptf897q2k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

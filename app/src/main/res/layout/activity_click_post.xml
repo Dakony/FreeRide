@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.swill.ClickPostActivity">
+
+    <TextView
+        android:id="@+id/driverLicense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:text="Drivers License"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/click_image_post"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/driverLicense"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/select_image" />
+
+    <TextView
+        android:id="@+id/click_plate_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="15dp"
+        android:layout_below="@+id/click_image_post"
+        android:background="@drawable/post_border"
+        android:textStyle="bold"
+        android:layout_marginTop="34dp"
+        android:hint="Plate Number" />
+
+    <TextView
+        android:id="@+id/click_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="15dp"
+        android:background="@drawable/post_border"
+        android:textStyle="bold"
+        android:layout_below="@+id/click_plate_number"
+        android:hint="Destination"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/click_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/post_border"
+        android:padding="15dp"
+        android:layout_below="@+id/click_destination"
+        android:hint="Description"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/click_dateOfJourney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/click_description"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/post_border"
+        android:padding="15dp"
+        android:hint="Date Of Journey" />
+
+    <Button
+        android:id="@+id/edit_post"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/click_dateOfJourney"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:text="Edit Post"
+        android:textColor="@color/white"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/delete_post"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_post"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:text="Delete Post" />
+
+</RelativeLayout>
